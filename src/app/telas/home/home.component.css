@@ -1,0 +1,27 @@
+img{
+    width: 200px;
+}
+.logo{
+    text-align: center;
+    height: 100%;
+    background-color: #c76500;
+}
+.titulo{
+    margin-top: 30px;
+    text-align: center;
+}
+.container {
+    margin: auto;
+    width: 500px;
+    
+}
+button{
+    margin-top: 30px;
+}
+.recuperar{
+    margin-top: 10px;
+    text-align: center;
+}
+.largura{
+    width: auto;
+}
