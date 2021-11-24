@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdicionarClienteComponent } from './telas/adicionar-cliente/adicionar-cliente.component';
 import { ClientesComponent } from './telas/clientes/clientes.component';
 import { ContatoComponent } from './telas/contato/contato.component';
 import { HomeComponent } from './telas/home/home.component';
@@ -25,10 +26,9 @@ const routes: Routes = [
         { path: "clientes", component: ClientesComponent},
         { path: "relatorios", component: RelatoriosComponent},
         { path: "vendas", component: VendasComponent},
+        { path: "adicionarCliente", component: AdicionarClienteComponent},
       ]
   },
-  
- 
 ];
 
 @NgModule({

@@ -22,6 +22,7 @@ import { MensagensComponent } from './telas/mensagens/mensagens.component';
 import { MatCardModule } from '@angular/material/card';
 import { RelatoriosComponent } from './telas/relatorios/relatorios.component';
 import { VendasComponent } from './telas/vendas/vendas.component';
+import { AdicionarClienteComponent } from './telas/adicionar-cliente/adicionar-cliente.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { VendasComponent } from './telas/vendas/vendas.component';
     ClientesComponent,
     MensagensComponent,
     RelatoriosComponent,
-    VendasComponent
+    VendasComponent,
+    AdicionarClienteComponent
   ],
   imports: [
     BrowserModule,
