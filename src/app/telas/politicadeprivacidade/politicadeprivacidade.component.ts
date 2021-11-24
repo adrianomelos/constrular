@@ -19,8 +19,6 @@ export class PoliticadeprivacidadeComponent implements OnInit {
     this.politicaService.buscarPolitica().subscribe(res => {
       this.politica = res
       console.log(res)
-    })
-    
+    })   
   }
-
 }

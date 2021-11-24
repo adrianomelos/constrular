@@ -12,20 +12,20 @@
 
         <div class="row largura">
             Nome:
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" [(ngModel)] = "contato.nome">
         </div>
 
         <div class="row largura">
             Email:
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" [(ngModel)] = "contato.email">
         </div> 
 
         <div class="row largura">
         Mensagem:
-            <textarea class="form-control" rows="3"></textarea>
+            <textarea class="form-control" rows="3" [(ngModel)] = "contato.mensagem"></textarea>
         </div>
         <div class="row">
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary" (click)="save()">Enviar</button>
         </div>
     </div>
 </div>

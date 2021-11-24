@@ -10,7 +10,30 @@
 
         <mat-card class="mat-elevation-z3">
             <mat-card-subtitle>
-                sfsdf
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th scope="col">id</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Mensagem</th>
+                        <th scope="col">Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let contato of contato">
+                        <th>{{contato.id}}</th>
+                        <th>{{contato.nome}}</th>
+                        <th>{{contato.email}}</th>
+                        <th>{{contato.mensagem}}</th>
+                       
+                        <th>
+                            <button type="submit" class="btn btn-danger" >Enviar</button>
+                        </th>
+                    </tr>
+                </tbody>
+                </table>
+                
             </mat-card-subtitle>
         </mat-card>
         

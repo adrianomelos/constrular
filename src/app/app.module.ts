@@ -23,6 +23,7 @@ import { MatCardModule } from '@angular/material/card';
 import { RelatoriosComponent } from './telas/relatorios/relatorios.component';
 import { VendasComponent } from './telas/vendas/vendas.component';
 import { AdicionarClienteComponent } from './telas/adicionar-cliente/adicionar-cliente.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { AdicionarClienteComponent } from './telas/adicionar-cliente/adicionar-c
     MatListModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MatCardModule
+    MatCardModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

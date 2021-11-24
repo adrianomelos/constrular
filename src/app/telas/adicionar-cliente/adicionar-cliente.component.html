@@ -8,8 +8,25 @@
     <div class="row">
 
         <mat-card class="mat-elevation-z3">
-            <mat-card-subtitle>
-                sfsdf
+            <mat-card-subtitle class="col-md-5">
+                Nome:
+                <div class="input"><input type="text" name="nome" autocomplete="off"  class="form-control" required></div>
+                Email:
+                <div class="input"><input type="text" name="email" autocomplete="off" class="form-control" required></div>
+                Telefone:
+                <div class="input"><input type="text" name="telefone"  autocomplete="off" class="form-control" required></div>
+               <br>
+               <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-success">Salvar</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-danger" (click)="adicionarCliente()">Cancelar</button>
+                    </div>
+               </div>
+                    
+                   
+               
             </mat-card-subtitle>
         </mat-card>
         

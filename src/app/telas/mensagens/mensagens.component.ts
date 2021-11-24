@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FaleConosco } from 'src/app/entitie';
+import { ContatoService } from 'src/app/servicos/contato.service';
 
 @Component({
   selector: 'app-mensagens',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MensagensComponent implements OnInit {
 
-  constructor() { }
+  contato: FaleConosco[] = []; 
+
+  constructor(private contatoService: ContatoService) { }
 
   ngOnInit(): void {
+    this.findAll();
   }
+
+  findAll(){
+    this.contatoService.findAll().subscribe(contatos => {
+      this.contato = contatos
+      console.log(this.contato)
+    })
+  }
+
+
 
 }
