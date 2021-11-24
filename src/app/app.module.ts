@@ -17,6 +17,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { ClientesComponent } from './telas/clientes/clientes.component';
+import { MensagensComponent } from './telas/mensagens/mensagens.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { HttpClientModule } from '@angular/common/http';
     RecuperarsenhaComponent,
     RodapeComponent,
     NavComponent,
-    ListarprodutosComponent
+    ListarprodutosComponent,
+    ClientesComponent,
+    MensagensComponent
   ],
   imports: [
     BrowserModule,

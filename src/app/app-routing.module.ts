@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ClientesComponent } from './telas/clientes/clientes.component';
 import { ContatoComponent } from './telas/contato/contato.component';
 import { HomeComponent } from './telas/home/home.component';
 import { LoginComponent } from './telas/login/login.component';
+import { MensagensComponent } from './telas/mensagens/mensagens.component';
 import { PoliticadeprivacidadeComponent } from './telas/politicadeprivacidade/politicadeprivacidade.component';
 import { ListarprodutosComponent } from './telas/produtos/listarprodutos/listarprodutos.component';
 import { RecuperarsenhaComponent } from './telas/recuperarsenha/recuperarsenha.component';
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: "home", component: HomeComponent,
       children: [
         { path: "listarProdutos", component: ListarprodutosComponent},
+        { path: "mensagens", component: MensagensComponent},
+        { path: "clientes", component: ClientesComponent},
       ]
   },
   

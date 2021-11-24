@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PoliticaDePrivacidade } from 'src/app/entitie';
+import { PoliticaDePrivacidadeService } from 'src/app/servicos/politica-de-privacidade.service';
 
 @Component({
   selector: 'app-politicadeprivacidade',
@@ -9,12 +10,17 @@ import { PoliticaDePrivacidade } from 'src/app/entitie';
 export class PoliticadeprivacidadeComponent implements OnInit {
 
   politica: PoliticaDePrivacidade = {
-    descricao: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    description: ""
   }
 
-  constructor() { }
+  constructor(private politicaService: PoliticaDePrivacidadeService) { }
 
   ngOnInit(): void {
+    this.politicaService.buscarPolitica().subscribe(res => {
+      this.politica = res
+      console.log(res)
+    })
+    
   }
 
 }
