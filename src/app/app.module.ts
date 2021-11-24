@@ -19,6 +19,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { ClientesComponent } from './telas/clientes/clientes.component';
 import { MensagensComponent } from './telas/mensagens/mensagens.component';
+import { MatCardModule } from '@angular/material/card';
+import { RelatoriosComponent } from './telas/relatorios/relatorios.component';
+import { VendasComponent } from './telas/vendas/vendas.component';
 
 
 @NgModule({
@@ -34,7 +37,9 @@ import { MensagensComponent } from './telas/mensagens/mensagens.component';
     NavComponent,
     ListarprodutosComponent,
     ClientesComponent,
-    MensagensComponent
+    MensagensComponent,
+    RelatoriosComponent,
+    VendasComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +48,8 @@ import { MensagensComponent } from './telas/mensagens/mensagens.component';
     MatIconModule,
     MatListModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

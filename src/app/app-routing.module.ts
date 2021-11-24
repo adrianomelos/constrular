@@ -8,7 +8,9 @@ import { MensagensComponent } from './telas/mensagens/mensagens.component';
 import { PoliticadeprivacidadeComponent } from './telas/politicadeprivacidade/politicadeprivacidade.component';
 import { ListarprodutosComponent } from './telas/produtos/listarprodutos/listarprodutos.component';
 import { RecuperarsenhaComponent } from './telas/recuperarsenha/recuperarsenha.component';
+import { RelatoriosComponent } from './telas/relatorios/relatorios.component';
 import { TermosdeusoComponent } from './telas/termosdeuso/termosdeuso.component';
+import { VendasComponent } from './telas/vendas/vendas.component';
 
 const routes: Routes = [
   { path: "termosdeuso", component: TermosdeusoComponent},
@@ -21,6 +23,8 @@ const routes: Routes = [
         { path: "listarProdutos", component: ListarprodutosComponent},
         { path: "mensagens", component: MensagensComponent},
         { path: "clientes", component: ClientesComponent},
+        { path: "relatorios", component: RelatoriosComponent},
+        { path: "vendas", component: VendasComponent},
       ]
   },
   
